@@ -1,0 +1,1588 @@
+snippet App-abort
+	App::abort(${1:$code}, ${2:$message}, ${3:$headers})
+endsnippet
+
+snippet App-after
+	App::after(${1:$callback})
+endsnippet
+
+snippet App-before
+	App::before(${1:$callback})
+endsnippet
+
+snippet App-bip
+	App::bindInstallPaths(${1:$paths})
+endsnippet
+
+snippet App-boot
+	App::boot()
+endsnippet
+
+snippet App-booted
+	App::booted(${1:$callback})
+endsnippet
+
+snippet App-booting
+	App::booting(${1:$callback})
+endsnippet
+
+snippet App-close
+	App::close(${1:$callback})
+endsnippet
+
+snippet App-de
+	App::detectEnvironment(${1:$environments})
+endsnippet
+
+snippet App-dispatch
+	App::dispatch(${1:$request})
+endsnippet
+
+snippet App-down
+	App::down(${1:$callback})
+endsnippet
+
+snippet App-environment
+	App::environment()
+endsnippet
+
+snippet App-error
+	App::error(${1:$callback})
+endsnippet
+
+snippet App-fatal
+	App::fatal(${1:$callback})
+endsnippet
+
+snippet App-finish
+	App::finish(${1:$callback})
+endsnippet
+
+snippet App-gcl
+	App::getConfigLoader()
+endsnippet
+
+snippet App-glp
+	App::getLoadedProviders()
+endsnippet
+
+snippet App-gpr
+	App::getProviderRepository()
+endsnippet
+
+snippet App-handle
+	App::handle(${1:$request}, ${2:$type}, ${3:$catch})
+endsnippet
+
+snippet App-idfm
+	App::isDownForMaintenance()
+endsnippet
+
+snippet App-ldp
+	App::loadDeferredProviders()
+endsnippet
+
+snippet App-make
+	App::make(${1:$abstract}, ${2:$parameters})
+endsnippet
+
+snippet App-missing
+	App::missing(${1:$callback})
+endsnippet
+
+snippet App-pr
+	App::prepareRequest(${1:$request})
+endsnippet
+
+snippet App-pr
+	App::prepareResponse(${1:$value})
+endsnippet
+
+snippet App-register
+	App::register(${1:$provider}, ${2:$options})
+endsnippet
+
+snippet App-run
+	App::run()
+endsnippet
+
+snippet App-ric
+	App::runningInConsole()
+endsnippet
+
+snippet App-rut
+	App::runningUnitTests()
+endsnippet
+
+snippet App-sds
+	App::setDeferredServices(${1:$services})
+endsnippet
+
+snippet App-sl
+	App::setLocale(${1:$locale})
+endsnippet
+
+snippet App-srfce
+	App::setRequestForConsoleEnvironment()
+endsnippet
+
+snippet App-shutdown
+	App::shutdown(${1:$callback})
+endsnippet
+
+snippet App-seh
+	App::startExceptionHandling()
+endsnippet
+
+snippet Art-call
+	Artisan::call(${1:$command}, ${2:$parameters}, ${3:$output})
+endsnippet
+
+snippet Auth-ced
+	Auth::createEloquentDriver()
+endsnippet
+
+snippet Config-an
+	Config::addNamespace(${1:$namespace}, ${2:$hint})
+endsnippet
+
+snippet Config-al
+	Config::afterLoading(${1:$namespace}, ${2:$callback})
+endsnippet
+
+snippet Config-get
+	Config::get(${1:$key}, ${2:$default})
+endsnippet
+
+snippet Config-galc
+	Config::getAfterLoadCallbacks()
+endsnippet
+
+snippet Config-ge
+	Config::getEnvironment()
+endsnippet
+
+snippet Config-gi
+	Config::getItems()
+endsnippet
+
+snippet Config-gl
+	Config::getLoader()
+endsnippet
+
+snippet Config-gn
+	Config::getNamespaces()
+endsnippet
+
+snippet Config-has
+	Config::has(${1:$key})
+endsnippet
+
+snippet Config-hg
+	Config::hasGroup(${1:$key})
+endsnippet
+
+snippet Config-oe
+	Config::offsetExists(${1:$key})
+endsnippet
+
+snippet Config-og
+	Config::offsetGet(${1:$key})
+endsnippet
+
+snippet Config-os
+	Config::offsetSet(${1:$key}, ${2:$value})
+endsnippet
+
+snippet Config-ou
+	Config::offsetUnset(${1:$key})
+endsnippet
+
+snippet Config-package
+	Config::package(${1:$package}, ${2:$hint}, ${3:$namespace})
+endsnippet
+
+snippet Config-set
+	Config::set(${1:$key}, ${2:$value})
+endsnippet
+
+snippet Config-sl
+	Config::setLoader(${1:$loader})
+endsnippet
+
+snippet Cookie-forever
+	Cookie::forever(${1:$name}, ${2:$value}, ${3:$path}, ${4:$domain}, ${5:$secure}, ${6:$httpOnly})
+endsnippet
+
+snippet Cookie-forget
+	Cookie::forget(${1:$name})
+endsnippet
+
+snippet Cookie-get
+	Cookie::get(${1:$key}, ${2:$default})
+endsnippet
+
+snippet Cookie-ge
+	Cookie::getEncrypter()
+endsnippet
+
+snippet Cookie-gr
+	Cookie::getRequest()
+endsnippet
+
+snippet Cookie-has
+	Cookie::has(${1:$key})
+endsnippet
+
+snippet Cookie-make
+	Cookie::make(${1:$name}, ${2:$value}, ${3:$minutes}, ${4:$path}, ${5:$domain}, ${6:$secure}, ${7:$httpOnly})
+endsnippet
+
+snippet Cookie-sdpad
+	Cookie::setDefaultPathAndDomain(${1:$path}, ${2:$domain})
+endsnippet
+
+snippet Crypt-decrypt
+	Crypt::decrypt(${1:$payload})
+endsnippet
+
+snippet Crypt-encrypt
+	Crypt::encrypt(${1:$value})
+endsnippet
+
+snippet Crypt-sc
+	Crypt::setCipher(${1:$cipher})
+endsnippet
+
+snippet Crypt-sk
+	Crypt::setKey(${1:$key})
+endsnippet
+
+snippet Crypt-sm
+	Crypt::setMode(${1:$mode})
+endsnippet
+
+snippet DB-connection
+	DB::connection(${1:$name})
+endsnippet
+
+snippet DB-extend
+	DB::extend(${1:$name}, ${2:$resolver})
+endsnippet
+
+snippet DB-gdc
+	DB::getDefaultConnection()
+endsnippet
+
+snippet DB-reconnect
+	DB::reconnect(${1:$name})
+endsnippet
+
+snippet DB-sdc
+	DB::setDefaultConnection(${1:$name})
+endsnippet
+
+snippet Event-ccl
+	Event::createClassListener(${1:$listener})
+endsnippet
+
+snippet Event-fire
+	Event::fire(${1:$event}, ${2:$payload}, ${3:$halt})
+endsnippet
+
+snippet Event-flush
+	Event::flush(${1:$event})
+endsnippet
+
+snippet Event-gl
+	Event::getListeners(${1:$eventName})
+endsnippet
+
+snippet Event-hl
+	Event::hasListeners(${1:$eventName})
+endsnippet
+
+snippet Event-listen
+	Event::listen(${1:$event}, ${2:$listener}, ${3:$priority})
+endsnippet
+
+snippet Event-ml
+	Event::makeListener(${1:$listener})
+endsnippet
+
+snippet Event-queue
+	Event::queue(${1:$event}, ${2:$payload})
+endsnippet
+
+snippet Event-subscribe
+	Event::subscribe(${1:$subscriber})
+endsnippet
+
+snippet Event-until
+	Event::until(${1:$event}, ${2:$payload})
+endsnippet
+
+snippet File-af
+	File::allFiles(${1:$directory})
+endsnippet
+
+snippet File-append
+	File::append(${1:$path}, ${2:$data})
+endsnippet
+
+snippet File-cd
+	File::cleanDirectory(${1:$directory})
+endsnippet
+
+snippet File-copy
+	File::copy(${1:$path}, ${2:$target})
+endsnippet
+
+snippet File-cd
+	File::copyDirectory(${1:$directory}, ${2:$destination}, ${3:$options})
+endsnippet
+
+snippet File-delete
+	File::delete(${1:$path})
+endsnippet
+
+snippet File-dd
+	File::deleteDirectory(${1:$directory}, ${2:$preserve})
+endsnippet
+
+snippet File-directories
+	File::directories(${1:$directory})
+endsnippet
+
+snippet File-exists
+	File::exists(${1:$path})
+endsnippet
+
+snippet File-extension
+	File::extension(${1:$path})
+endsnippet
+
+snippet File-files
+	File::files(${1:$directory})
+endsnippet
+
+snippet File-get
+	File::get(${1:$path})
+endsnippet
+
+snippet File-gr
+	File::getRemote(${1:$path})
+endsnippet
+
+snippet File-gr
+	File::getRequire(${1:$path})
+endsnippet
+
+snippet File-glob
+	File::glob(${1:$pattern}, ${2:$flags})
+endsnippet
+
+snippet File-id
+	File::isDirectory(${1:$directory})
+endsnippet
+
+snippet File-if
+	File::isFile(${1:$file})
+endsnippet
+
+snippet File-iw
+	File::isWritable(${1:$path})
+endsnippet
+
+snippet File-lm
+	File::lastModified(${1:$path})
+endsnippet
+
+snippet File-md
+	File::makeDirectory(${1:$path}, ${2:$mode}, ${3:$recursive})
+endsnippet
+
+snippet File-move
+	File::move(${1:$path}, ${2:$target})
+endsnippet
+
+snippet File-put
+	File::put(${1:$path}, ${2:$contents})
+endsnippet
+
+snippet File-ro
+	File::requireOnce(${1:$file})
+endsnippet
+
+snippet File-size
+	File::size(${1:$path})
+endsnippet
+
+snippet File-type
+	File::type(${1:$path})
+endsnippet
+
+snippet Form-button
+	Form::button(${1:$value}, ${2:$options})
+endsnippet
+
+snippet Form-checkbox
+	Form::checkbox(${1:$name}, ${2:$value}, ${3:$checked}, ${4:$options})
+endsnippet
+
+snippet Form-close
+	Form::close()
+endsnippet
+
+snippet Form-email
+	Form::email(${1:$name}, ${2:$value}, ${3:$options})
+endsnippet
+
+snippet Form-file
+	Form::file(${1:$name}, ${2:$options})
+endsnippet
+
+snippet Form-gss
+	Form::getSessionStore()
+endsnippet
+
+snippet Form-gva
+	Form::getValueAttribute(${1:$name}, ${2:$value})
+endsnippet
+
+snippet Form-hidden
+	Form::hidden(${1:$name}, ${2:$value}, ${3:$options})
+endsnippet
+
+snippet Form-image
+	Form::image(${1:$url}, ${2:$name}, ${3:$attributes})
+endsnippet
+
+snippet Form-input
+	Form::input(${1:$type}, ${2:$name}, ${3:$value}, ${4:$options})
+endsnippet
+
+snippet Form-label
+	Form::label(${1:$name}, ${2:$value}, ${3:$options})
+endsnippet
+
+snippet Form-macro
+	Form::macro(${1:$name}, ${2:$macro})
+endsnippet
+
+snippet Form-model
+	Form::model(${1:$model}, ${2:$options})
+endsnippet
+
+snippet Form-open
+	Form::open(${1:$options})
+endsnippet
+
+snippet Form-password
+	Form::password(${1:$name}, ${2:$options})
+endsnippet
+
+snippet Form-radio
+	Form::radio(${1:$name}, ${2:$value}, ${3:$checked}, ${4:$options})
+endsnippet
+
+snippet Form-reset
+	Form::reset(${1:$value}, ${2:$attributes})
+endsnippet
+
+snippet Form-select
+	Form::select(${1:$name}, ${2:$list}, ${3:$selected}, ${4:$options})
+endsnippet
+
+snippet Form-sss
+	Form::setSessionStore(${1:$session})
+endsnippet
+
+snippet Form-submit
+	Form::submit(${1:$value}, ${2:$options})
+endsnippet
+
+snippet Form-text
+	Form::text(${1:$name}, ${2:$value}, ${3:$options})
+endsnippet
+
+snippet Form-textarea
+	Form::textarea(${1:$name}, ${2:$value}, ${3:$options})
+endsnippet
+
+snippet Form-token
+	Form::token()
+endsnippet
+
+snippet HTML-attributes
+	HTML::attributes(${1:$attributes})
+endsnippet
+
+snippet HTML-decode
+	HTML::decode(${1:$value})
+endsnippet
+
+snippet HTML-email
+	HTML::email(${1:$email})
+endsnippet
+
+snippet HTML-entities
+	HTML::entities(${1:$value})
+endsnippet
+
+snippet HTML-image
+	HTML::image(${1:$url}, ${2:$alt}, ${3:$attributes})
+endsnippet
+
+snippet HTML-link
+	HTML::link(${1:$url}, ${2:$title}, ${3:$attributes}, ${4:$secure})
+endsnippet
+
+snippet HTML-la
+	HTML::linkAction(${1:$action}, ${2:$title}, ${3:$parameters}, ${4:$attributes})
+endsnippet
+
+snippet HTML-la
+	HTML::linkAsset(${1:$url}, ${2:$title}, ${3:$attributes}, ${4:$secure})
+endsnippet
+
+snippet HTML-lr
+	HTML::linkRoute(${1:$name}, ${2:$title}, ${3:$parameters}, ${4:$attributes})
+endsnippet
+
+snippet HTML-lsa
+	HTML::linkSecureAsset(${1:$url}, ${2:$title}, ${3:$attributes})
+endsnippet
+
+snippet HTML-macro
+	HTML::macro(${1:$name}, ${2:$macro})
+endsnippet
+
+snippet HTML-mailto
+	HTML::mailto(${1:$email}, ${2:$title}, ${3:$attributes})
+endsnippet
+
+snippet HTML-obfuscate
+	HTML::obfuscate(${1:$value})
+endsnippet
+
+snippet HTML-ol
+	HTML::ol(${1:$list}, ${2:$attributes})
+endsnippet
+
+snippet HTML-script
+	HTML::script(${1:$url}, ${2:$attributes})
+endsnippet
+
+snippet HTML-sl
+	HTML::secureLink(${1:$url}, ${2:$title}, ${3:$attributes})
+endsnippet
+
+snippet HTML-style
+	HTML::style(${1:$url}, ${2:$attributes})
+endsnippet
+
+snippet HTML-ul
+	HTML::ul(${1:$list}, ${2:$attributes})
+endsnippet
+
+snippet Hash-check
+	Hash::check(${1:$value}, ${2:$hashedValue}, ${3:$options})
+endsnippet
+
+snippet Hash-make
+	Hash::make(${1:$value}, ${2:$options})
+endsnippet
+
+snippet Hash-nr
+	Hash::needsRehash(${1:$hashedValue}, ${2:$options})
+endsnippet
+
+snippet Input-ajax
+	Input::ajax()
+endsnippet
+
+snippet Input-all
+	Input::all()
+endsnippet
+
+snippet Input-cookie
+	Input::cookie(${1:$key}, ${2:$default})
+endsnippet
+
+snippet Input-except
+	Input::except(${1:$keys})
+endsnippet
+
+snippet Input-file
+	Input::file(${1:$key}, ${2:$default})
+endsnippet
+
+snippet Input-flash
+	Input::flash(${1:$filter}, ${2:$keys})
+endsnippet
+
+snippet Input-fe
+	Input::flashExcept(${1:$keys})
+endsnippet
+
+snippet Input-fo
+	Input::flashOnly(${1:$keys})
+endsnippet
+
+snippet Input-flush
+	Input::flush()
+endsnippet
+
+snippet Input-fu
+	Input::fullUrl()
+endsnippet
+
+snippet Input-gss
+	Input::getSessionStore()
+endsnippet
+
+snippet Input-has
+	Input::has(${1:$key})
+endsnippet
+
+snippet Input-hf
+	Input::hasFile(${1:$key})
+endsnippet
+
+snippet Input-hss
+	Input::hasSessionStore()
+endsnippet
+
+snippet Input-header
+	Input::header(${1:$key}, ${2:$default})
+endsnippet
+
+snippet Input-input
+	Input::input(${1:$key}, ${2:$default})
+endsnippet
+
+snippet Input-instance
+	Input::instance()
+endsnippet
+
+snippet Input-is
+	Input::is(${1:$pattern})
+endsnippet
+
+snippet Input-ij
+	Input::isJson()
+endsnippet
+
+snippet Input-json
+	Input::json(${1:$key}, ${2:$default})
+endsnippet
+
+snippet Input-merge
+	Input::merge(${1:$input})
+endsnippet
+
+snippet Input-old
+	Input::old(${1:$key}, ${2:$default})
+endsnippet
+
+snippet Input-only
+	Input::only(${1:$keys})
+endsnippet
+
+snippet Input-path
+	Input::path()
+endsnippet
+
+snippet Input-query
+	Input::query(${1:$key}, ${2:$default})
+endsnippet
+
+snippet Input-replace
+	Input::replace(${1:$input})
+endsnippet
+
+snippet Input-root
+	Input::root()
+endsnippet
+
+snippet Input-secure
+	Input::secure()
+endsnippet
+
+snippet Input-segment
+	Input::segment(${1:$index}, ${2:$default})
+endsnippet
+
+snippet Input-segments
+	Input::segments()
+endsnippet
+
+snippet Input-server
+	Input::server(${1:$key}, ${2:$default})
+endsnippet
+
+snippet Input-sss
+	Input::setSessionStore(${1:$session})
+endsnippet
+
+snippet Input-url
+	Input::url()
+endsnippet
+
+snippet Lang-an
+	Lang::addNamespace(${1:$namespace}, ${2:$hint})
+endsnippet
+
+snippet Lang-choice
+	Lang::choice(${1:$key}, ${2:$number}, ${3:$replace}, ${4:$locale})
+endsnippet
+
+snippet Lang-get
+	Lang::get(${1:$key}, ${2:$replace}, ${3:$locale})
+endsnippet
+
+snippet Lang-gl
+	Lang::getLoader()
+endsnippet
+
+snippet Lang-gl
+	Lang::getLocale()
+endsnippet
+
+snippet Lang-gs
+	Lang::getSelector()
+endsnippet
+
+snippet Lang-has
+	Lang::has(${1:$key}, ${2:$locale})
+endsnippet
+
+snippet Lang-load
+	Lang::load(${1:$namespace}, ${2:$group}, ${3:$locale})
+endsnippet
+
+snippet Lang-locale
+	Lang::locale()
+endsnippet
+
+snippet Lang-pk
+	Lang::parseKey(${1:$key})
+endsnippet
+
+snippet Lang-sl
+	Lang::setLocale(${1:$locale})
+endsnippet
+
+snippet Lang-ss
+	Lang::setSelector(${1:$selector})
+endsnippet
+
+snippet Lang-trans
+	Lang::trans(${1:$id}, ${2:$parameters}, ${3:$domain}, ${4:$locale})
+endsnippet
+
+snippet Lang-tc
+	Lang::transChoice(${1:$id}, ${2:$number}, ${3:$parameters}, ${4:$domain}, ${5:$locale})
+endsnippet
+
+snippet Log-ged
+	Log::getEventDispatcher()
+endsnippet
+
+snippet Log-gm
+	Log::getMonolog()
+endsnippet
+
+snippet Log-listen
+	Log::listen(${1:$callback})
+endsnippet
+
+snippet Log-sed
+	Log::setEventDispatcher(${1:$dispatcher})
+endsnippet
+
+snippet Log-udf
+	Log::useDailyFiles(${1:$path}, ${2:$days}, ${3:$level})
+endsnippet
+
+snippet Log-uf
+	Log::useFiles(${1:$path}, ${2:$level})
+endsnippet
+
+snippet Mail-af
+	Mail::alwaysFrom(${1:$address}, ${2:$name})
+endsnippet
+
+snippet Mail-gsm
+	Mail::getSwiftMailer()
+endsnippet
+
+snippet Mail-gve
+	Mail::getViewEnvironment()
+endsnippet
+
+snippet Mail-hqm
+	Mail::handleQueuedMessage(${1:$job}, ${2:$data})
+endsnippet
+
+snippet Mail-later
+	Mail::later(${1:$delay}, ${2:$view}, ${3:$data}, ${4:$callback}, ${5:$queue})
+endsnippet
+
+snippet Mail-lo
+	Mail::laterOn(${1:$queue}, ${2:$delay}, ${3:$view}, ${4:$data}, ${5:$callback})
+endsnippet
+
+snippet Mail-plain
+	Mail::plain(${1:$view}, ${2:$data}, ${3:$callback})
+endsnippet
+
+snippet Mail-pretend
+	Mail::pretend(${1:$value})
+endsnippet
+
+snippet Mail-queue
+	Mail::queue(${1:$view}, ${2:$data}, ${3:$callback}, ${4:$queue})
+endsnippet
+
+snippet Mail-qo
+	Mail::queueOn(${1:$queue}, ${2:$view}, ${3:$data}, ${4:$callback})
+endsnippet
+
+snippet Mail-send
+	Mail::send(${1:$view}, ${2:$data}, ${3:$callback})
+endsnippet
+
+snippet Mail-sc
+	Mail::setContainer(${1:$container})
+endsnippet
+
+snippet Mail-sl
+	Mail::setLogger(${1:$logger})
+endsnippet
+
+snippet Mail-sq
+	Mail::setQueue(${1:$queue})
+endsnippet
+
+snippet Mail-ssm
+	Mail::setSwiftMailer(${1:$swift})
+endsnippet
+
+snippet Pagin-gcp
+	Paginator::getCurrentPage()
+endsnippet
+
+snippet Pagin-gcu
+	Paginator::getCurrentUrl()
+endsnippet
+
+snippet Pagin-gl
+	Paginator::getLocale()
+endsnippet
+
+snippet Pagin-gpn
+	Paginator::getPageName()
+endsnippet
+
+snippet Pagin-gpv
+	Paginator::getPaginationView(${1:$paginator})
+endsnippet
+
+snippet Pagin-gr
+	Paginator::getRequest()
+endsnippet
+
+snippet Pagin-gt
+	Paginator::getTranslator()
+endsnippet
+
+snippet Pagin-gvd
+	Paginator::getViewDriver()
+endsnippet
+
+snippet Pagin-gvn
+	Paginator::getViewName()
+endsnippet
+
+snippet Pagin-make
+	Paginator::make(${1:$items}, ${2:$total}, ${3:$perPage})
+endsnippet
+
+snippet Pagin-sbu
+	Paginator::setBaseUrl(${1:$baseUrl})
+endsnippet
+
+snippet Pagin-scp
+	Paginator::setCurrentPage(${1:$number})
+endsnippet
+
+snippet Pagin-sl
+	Paginator::setLocale(${1:$locale})
+endsnippet
+
+snippet Pagin-spn
+	Paginator::setPageName(${1:$pageName})
+endsnippet
+
+snippet Pagin-sr
+	Paginator::setRequest(${1:$request})
+endsnippet
+
+snippet Pagin-svd
+	Paginator::setViewDriver(${1:$view})
+endsnippet
+
+snippet Pagin-svn
+	Paginator::setViewName(${1:$viewName})
+endsnippet
+
+snippet Queue-ac
+	Queue::addConnector(${1:$driver}, ${2:$resolver})
+endsnippet
+
+snippet Queue-connection
+	Queue::connection(${1:$name})
+endsnippet
+
+snippet Redir-action
+	Redirect::action(${1:$action}, ${2:$parameters}, ${3:$status}, ${4:$headers})
+endsnippet
+
+snippet Redir-back
+	Redirect::back(${1:$status}, ${2:$headers})
+endsnippet
+
+snippet Redir-gug
+	Redirect::getUrlGenerator()
+endsnippet
+
+snippet Redir-guest
+	Redirect::guest(${1:$path}, ${2:$status}, ${3:$headers}, ${4:$secure})
+endsnippet
+
+snippet Redir-home
+	Redirect::home(${1:$status})
+endsnippet
+
+snippet Redir-intended
+	Redirect::intended(${1:$default}, ${2:$status}, ${3:$headers}, ${4:$secure})
+endsnippet
+
+snippet Redir-refresh
+	Redirect::refresh(${1:$status}, ${2:$headers})
+endsnippet
+
+snippet Redir-route
+	Redirect::route(${1:$route}, ${2:$parameters}, ${3:$status}, ${4:$headers})
+endsnippet
+
+snippet Redir-secure
+	Redirect::secure(${1:$path}, ${2:$status}, ${3:$headers})
+endsnippet
+
+snippet Redir-ss
+	Redirect::setSession(${1:$session})
+endsnippet
+
+snippet Redir-to
+	Redirect::to(${1:$path}, ${2:$status}, ${3:$headers}, ${4:$secure})
+endsnippet
+
+snippet Redis-command
+	Redis::command(${1:$method}, ${2:$parameters})
+endsnippet
+
+snippet Redis-connection
+	Redis::connection(${1:$name})
+endsnippet
+
+snippet Req-ajax
+	Request::ajax()
+endsnippet
+
+snippet Req-all
+	Request::all()
+endsnippet
+
+snippet Req-cookie
+	Request::cookie(${1:$key}, ${2:$default})
+endsnippet
+
+snippet Req-except
+	Request::except(${1:$keys})
+endsnippet
+
+snippet Req-file
+	Request::file(${1:$key}, ${2:$default})
+endsnippet
+
+snippet Req-flash
+	Request::flash(${1:$filter}, ${2:$keys})
+endsnippet
+
+snippet Req-fe
+	Request::flashExcept(${1:$keys})
+endsnippet
+
+snippet Req-fo
+	Request::flashOnly(${1:$keys})
+endsnippet
+
+snippet Req-flush
+	Request::flush()
+endsnippet
+
+snippet Req-fu
+	Request::fullUrl()
+endsnippet
+
+snippet Req-gss
+	Request::getSessionStore()
+endsnippet
+
+snippet Req-has
+	Request::has(${1:$key})
+endsnippet
+
+snippet Req-hf
+	Request::hasFile(${1:$key})
+endsnippet
+
+snippet Req-hss
+	Request::hasSessionStore()
+endsnippet
+
+snippet Req-header
+	Request::header(${1:$key}, ${2:$default})
+endsnippet
+
+snippet Req-input
+	Request::input(${1:$key}, ${2:$default})
+endsnippet
+
+snippet Req-instance
+	Request::instance()
+endsnippet
+
+snippet Req-is
+	Request::is(${1:$pattern})
+endsnippet
+
+snippet Req-ij
+	Request::isJson()
+endsnippet
+
+snippet Req-json
+	Request::json(${1:$key}, ${2:$default})
+endsnippet
+
+snippet Req-merge
+	Request::merge(${1:$input})
+endsnippet
+
+snippet Req-old
+	Request::old(${1:$key}, ${2:$default})
+endsnippet
+
+snippet Req-only
+	Request::only(${1:$keys})
+endsnippet
+
+snippet Req-path
+	Request::path()
+endsnippet
+
+snippet Req-query
+	Request::query(${1:$key}, ${2:$default})
+endsnippet
+
+snippet Req-replace
+	Request::replace(${1:$input})
+endsnippet
+
+snippet Req-root
+	Request::root()
+endsnippet
+
+snippet Req-secure
+	Request::secure()
+endsnippet
+
+snippet Req-segment
+	Request::segment(${1:$index}, ${2:$default})
+endsnippet
+
+snippet Req-segments
+	Request::segments()
+endsnippet
+
+snippet Req-server
+	Request::server(${1:$key}, ${2:$default})
+endsnippet
+
+snippet Req-sss
+	Request::setSessionStore(${1:$session})
+endsnippet
+
+snippet Req-url
+	Request::url()
+endsnippet
+
+snippet Route-af
+	Route::addFilter(${1:$name}, ${2:$callback})
+endsnippet
+
+snippet Route-after
+	Route::after(${1:$callback})
+endsnippet
+
+snippet Route-any
+	Route::any(${1:$pattern}, ${2:$action})
+endsnippet
+
+snippet Route-before
+	Route::before(${1:$callback})
+endsnippet
+
+snippet Route-bind
+	Route::bind(${1:$key}, ${2:$binder})
+endsnippet
+
+snippet Route-ccf
+	Route::callCloseFilter(${1:$request}, ${2:$response})
+endsnippet
+
+snippet Route-cff
+	Route::callFinishFilter(${1:$request}, ${2:$response})
+endsnippet
+
+snippet Route-close
+	Route::close(${1:$callback})
+endsnippet
+
+snippet Route-controller
+	Route::controller(${1:$uri}, ${2:$controller}, ${3:$names})
+endsnippet
+
+snippet Route-controllers
+	Route::controllers(${1:$controllers})
+endsnippet
+
+snippet Route-cra
+	Route::currentRouteAction()
+endsnippet
+
+snippet Route-crn
+	Route::currentRouteName()
+endsnippet
+
+snippet Route-crn
+	Route::currentRouteNamed(${1:$name})
+endsnippet
+
+snippet Route-cru
+	Route::currentRouteUses(${1:$action})
+endsnippet
+
+snippet Route-delete
+	Route::delete(${1:$pattern}, ${2:$action})
+endsnippet
+
+snippet Route-df
+	Route::disableFilters()
+endsnippet
+
+snippet Route-dispatch
+	Route::dispatch(${1:$request})
+endsnippet
+
+snippet Route-ef
+	Route::enableFilters()
+endsnippet
+
+snippet Route-fe
+	Route::filtersEnabled()
+endsnippet
+
+snippet Route-fpf
+	Route::findPatternFilters(${1:$request})
+endsnippet
+
+snippet Route-finish
+	Route::finish(${1:$callback})
+endsnippet
+
+snippet Route-get
+	Route::get(${1:$pattern}, ${2:$action})
+endsnippet
+
+snippet Route-gc
+	Route::getContainer()
+endsnippet
+
+snippet Route-gcr
+	Route::getCurrentRoute()
+endsnippet
+
+snippet Route-gf
+	Route::getFilter(${1:$name})
+endsnippet
+
+snippet Route-gf
+	Route::getFilters()
+endsnippet
+
+snippet Route-ggf
+	Route::getGlobalFilters()
+endsnippet
+
+snippet Route-gi
+	Route::getInspector()
+endsnippet
+
+snippet Route-gr
+	Route::getRequest()
+endsnippet
+
+snippet Route-gru
+	Route::getResourceUri(${1:$resource})
+endsnippet
+
+snippet Route-gr
+	Route::getRoutes()
+endsnippet
+
+snippet Route-group
+	Route::group(${1:$attributes}, ${2:$callback})
+endsnippet
+
+snippet Route-hb
+	Route::hasBinder(${1:$key})
+endsnippet
+
+snippet Route-match
+	Route::match(${1:$method}, ${2:$pattern}, ${3:$action})
+endsnippet
+
+snippet Route-mf
+	Route::matchFilter(${1:$pattern}, ${2:$names})
+endsnippet
+
+snippet Route-model
+	Route::model(${1:$key}, ${2:$class}, ${3:$callback})
+endsnippet
+
+snippet Route-options
+	Route::options(${1:$pattern}, ${2:$action})
+endsnippet
+
+snippet Route-patch
+	Route::patch(${1:$pattern}, ${2:$action})
+endsnippet
+
+snippet Route-pattern
+	Route::pattern(${1:$key}, ${2:$pattern})
+endsnippet
+
+snippet Route-pb
+	Route::performBinding(${1:$key}, ${2:$value}, ${3:$route})
+endsnippet
+
+snippet Route-post
+	Route::post(${1:$pattern}, ${2:$action})
+endsnippet
+
+snippet Route-prepare
+	Route::prepare(${1:$value}, ${2:$request})
+endsnippet
+
+snippet Route-put
+	Route::put(${1:$pattern}, ${2:$action})
+endsnippet
+
+snippet Route-resource
+	Route::resource(${1:$resource}, ${2:$controller}, ${3:$options})
+endsnippet
+
+snippet Route-sc
+	Route::setContainer(${1:$container})
+endsnippet
+
+snippet Route-scr
+	Route::setCurrentRoute(${1:$route})
+endsnippet
+
+snippet Route-si
+	Route::setInspector(${1:$inspector})
+endsnippet
+
+snippet Sess-flash
+	Session::flash(${1:$key}, ${2:$value})
+endsnippet
+
+snippet Sess-fi
+	Session::flashInput(${1:$value})
+endsnippet
+
+snippet Sess-flush
+	Session::flush()
+endsnippet
+
+snippet Sess-forget
+	Session::forget(${1:$key})
+endsnippet
+
+snippet Sess-get
+	Session::get(${1:$name}, ${2:$default})
+endsnippet
+
+snippet Sess-goi
+	Session::getOldInput(${1:$key}, ${2:$default})
+endsnippet
+
+snippet Sess-gt
+	Session::getToken()
+endsnippet
+
+snippet Sess-has
+	Session::has(${1:$name})
+endsnippet
+
+snippet Sess-hoi
+	Session::hasOldInput(${1:$key})
+endsnippet
+
+snippet Sess-keep
+	Session::keep(${1:$keys})
+endsnippet
+
+snippet Sess-push
+	Session::push(${1:$key}, ${2:$value})
+endsnippet
+
+snippet Sess-put
+	Session::put(${1:$key}, ${2:$value})
+endsnippet
+
+snippet Sess-reflash
+	Session::reflash()
+endsnippet
+
+snippet Sess-regenerate
+	Session::regenerate()
+endsnippet
+
+snippet Sess-save
+	Session::save()
+endsnippet
+
+snippet Sess-start
+	Session::start()
+endsnippet
+
+snippet Sess-token
+	Session::token()
+endsnippet
+
+snippet URL-action
+	URL::action(${1:$action}, ${2:$parameters}, ${3:$absolute})
+endsnippet
+
+snippet URL-asset
+	URL::asset(${1:$path}, ${2:$secure})
+endsnippet
+
+snippet URL-current
+	URL::current()
+endsnippet
+
+snippet URL-full
+	URL::full()
+endsnippet
+
+snippet URL-gg
+	URL::getGenerator()
+endsnippet
+
+snippet URL-gr
+	URL::getRequest()
+endsnippet
+
+snippet URL-ivu
+	URL::isValidUrl(${1:$path})
+endsnippet
+
+snippet URL-previous
+	URL::previous()
+endsnippet
+
+snippet URL-route
+	URL::route(${1:$name}, ${2:$parameters}, ${3:$absolute})
+endsnippet
+
+snippet URL-secure
+	URL::secure(${1:$path}, ${2:$parameters})
+endsnippet
+
+snippet URL-sa
+	URL::secureAsset(${1:$path})
+endsnippet
+
+snippet URL-sg
+	URL::setGenerator(${1:$generator})
+endsnippet
+
+snippet URL-sr
+	URL::setRequest(${1:$request})
+endsnippet
+
+snippet URL-to
+	URL::to(${1:$path}, ${2:$parameters}, ${3:$secure})
+endsnippet
+
+snippet Valid-extend
+	Validator::extend(${1:$rule}, ${2:$extension})
+endsnippet
+
+snippet Valid-ei
+	Validator::extendImplicit(${1:$rule}, ${2:$extension})
+endsnippet
+
+snippet Valid-gpv
+	Validator::getPresenceVerifier()
+endsnippet
+
+snippet Valid-gt
+	Validator::getTranslator()
+endsnippet
+
+snippet Valid-make
+	Validator::make(${1:$data}, ${2:$rules}, ${3:$messages})
+endsnippet
+
+snippet Valid-resolver
+	Validator::resolver(${1:$resolver})
+endsnippet
+
+snippet Valid-spv
+	Validator::setPresenceVerifier(${1:$presenceVerifier})
+endsnippet
+
+snippet View-ae
+	View::addExtension(${1:$extension}, ${2:$engine}, ${3:$resolver})
+endsnippet
+
+snippet View-al
+	View::addLocation(${1:$location})
+endsnippet
+
+snippet View-an
+	View::addNamespace(${1:$namespace}, ${2:$hints})
+endsnippet
+
+snippet View-cc
+	View::callComposer(${1:$view})
+endsnippet
+
+snippet View-composer
+	View::composer(${1:$views}, ${2:$callback})
+endsnippet
+
+snippet View-dr
+	View::decrementRender()
+endsnippet
+
+snippet View-dr
+	View::doneRendering()
+endsnippet
+
+snippet View-exists
+	View::exists(${1:$view})
+endsnippet
+
+snippet View-fs
+	View::flushSections()
+endsnippet
+
+snippet View-gc
+	View::getContainer()
+endsnippet
+
+snippet View-gd
+	View::getDispatcher()
+endsnippet
+
+snippet View-ger
+	View::getEngineResolver()
+endsnippet
+
+snippet View-ge
+	View::getExtensions()
+endsnippet
+
+snippet View-gf
+	View::getFinder()
+endsnippet
+
+snippet View-gn
+	View::getNames()
+endsnippet
+
+snippet View-gs
+	View::getSections()
+endsnippet
+
+snippet View-gs
+	View::getShared()
+endsnippet
+
+snippet View-ir
+	View::incrementRender()
+endsnippet
+
+snippet View-inject
+	View::inject(${1:$section}, ${2:$content})
+endsnippet
+
+snippet View-make
+	View::make(${1:$view}, ${2:$data}, ${3:$mergeData})
+endsnippet
+
+snippet View-name
+	View::name(${1:$view}, ${2:$name})
+endsnippet
+
+snippet View-of
+	View::of(${1:$view}, ${2:$data})
+endsnippet
+
+snippet View-re
+	View::renderEach(${1:$view}, ${2:$data}, ${3:$iterator}, ${4:$empty})
+endsnippet
+
+snippet View-sc
+	View::setContainer(${1:$container})
+endsnippet
+
+snippet View-share
+	View::share(${1:$key}, ${2:$value})
+endsnippet
+
+snippet View-ss
+	View::startSection(${1:$section}, ${2:$content})
+endsnippet
+
+snippet View-ss
+	View::stopSection(${1:$overwrite})
+endsnippet
+
+snippet View-yc
+	View::yieldContent(${1:$section})
+endsnippet
+
+snippet View-ys
+	View::yieldSection()
+endsnippet
+
