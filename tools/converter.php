@@ -15,28 +15,30 @@ class SublimeTextSnippetsConverter {
      *
      * @return void
      */
-    static public function toSnipMate()
-    {
+    static public function toSnipMate() {
         $snipMateSnippets = '';
 
         foreach (glob(self::sublimeSnippetsFolder) as $filename) {
             $doc = new DOMDocument();
             $doc->load($filename);
             $snippets = $doc->getElementsByTagName("snippet");
-            foreach ($snippets as $snippet)
-            {
-                $tabTrigger = $snippet->getElementsByTagName("tabTrigger")->item(0)->nodeValue;
+            foreach ($snippets as $snippet) {
+                list($tabTrigger) = explode('-', $snippet->getElementsByTagName("tabTrigger")->item(0)->nodeValue);
                 $content = $snippet->getElementsByTagName('content')->item(0)->nodeValue;
                 $description = $snippet->getElementsByTagName('description');
-                if($description->length == 0)
-                    $description = '';
-                else
+                if($description->length == 0) {
+                    preg_match('/^.+\(/', $content, $matches);
+                    if(isset($matches[0]))
+                        $description = 'Laravel 4: '.$matches[0].')';
+                    else
+                        $description = '';
+                } else {
                     $description = $description->item(0)->nodeValue;
+                }
                 $snipMateSnippets .= "snippet $tabTrigger";
                 $snipMateSnippets .= !empty($description) ? " # $description\n" : "\n";
                 $lines = explode("\n", $content);
-                for($i = 0; $i < count($lines); $i++)
-                {
+                for($i = 0; $i < count($lines); $i++) {
                     $lines[$i] = str_replace('\$','$',$lines[$i]);
                     $lines[$i] = "\t".$lines[$i];
                 }
@@ -52,28 +54,30 @@ class SublimeTextSnippetsConverter {
      *
      * @return void
      */
-    static public function toUltiSnips()
-    {
+    static public function toUltiSnips() {
         $UtilSnipsSnippets = '';
 
         foreach (glob(self::sublimeSnippetsFolder) as $filename) {
             $doc = new DOMDocument();
             $doc->load($filename);
             $snippets = $doc->getElementsByTagName("snippet");
-            foreach ($snippets as $snippet)
-            {
-                $tabTrigger = $snippet->getElementsByTagName("tabTrigger")->item(0)->nodeValue;
+            foreach ($snippets as $snippet) {
+                list($tabTrigger) = explode('-', $snippet->getElementsByTagName("tabTrigger")->item(0)->nodeValue);
                 $content = $snippet->getElementsByTagName('content')->item(0)->nodeValue;
                 $description = $snippet->getElementsByTagName('description');
-                if($description->length == 0)
-                    $description = '';
-                else
+                if($description->length == 0) {
+                    preg_match('/^.+\(/', $content, $matches);
+                    if(isset($matches[0]))
+                        $description = 'Laravel 4: '.$matches[0].')';
+                    else
+                        $description = '';
+                } else {
                     $description = $description->item(0)->nodeValue;
+                }
                 $UtilSnipsSnippets .= "snippet $tabTrigger";
                 $UtilSnipsSnippets .= !empty($description) ? " \"$description\"\n" : "\n";
                 $lines = explode("\n", $content);
-                for($i = 0; $i < count($lines); $i++)
-                {
+                for($i = 0; $i < count($lines); $i++) {
                     $lines[$i] = str_replace('\$','$',$lines[$i]);
                     $lines[$i] = "\t".$lines[$i];
                 }
